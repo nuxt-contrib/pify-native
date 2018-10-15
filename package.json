@@ -13,7 +13,8 @@
 		"node": ">=6"
 	},
 	"scripts": {
-		"test": "xo && ava",
+		"test": "xo && ava && bench",
+		"bench": "node bench.js",
 		"optimization-test": "node --allow-natives-syntax optimization-test.js"
 	},
 	"files": [
