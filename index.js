@@ -2,12 +2,12 @@
 
 const nativePromisify = require('util').promisify;
 
-function processFn (fn, options) {
+const processFn = (fn, options) => {
 	if (
-		nativePromisify // Util.promisify supported
-		&& options.native !== false // Native not disabled with options
-		&& !options.multiArgs // No multiArgs mode
-		&& options.errorFirst !== false // Only errorFirst mode is supported
+		nativePromisify && // Util.promisify supported
+		options.native !== false && // Native not disabled with options
+		!options.multiArgs && // Not `multiArgs` mode
+		options.errorFirst !== false // Is `errorFirst` mode
 	) {
 		return nativePromisify(fn);
 	}
@@ -44,7 +44,7 @@ function processFn (fn, options) {
 			fn.apply(this, args);
 		});
 	};
-}
+};
 
 module.exports = (input, options) => {
 	options = Object.assign({

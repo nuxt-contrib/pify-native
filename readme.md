@@ -6,7 +6,7 @@
 
 <div align="center">
 	<b>
-		<a href="https://tidelift.com/subscription/pkg/npm-pify?utm_source=npm-pify&utm_medium=referral&utm_campaign=readme">Get professional support for 'pify' with a Tidelift subscription</a>
+		<a href="https://tidelift.com/subscription/pkg/npm-pify?utm_source=npm-pify&utm_medium=referral&utm_campaign=readme">Get professional support for 'pify-native' with a Tidelift subscription</a>
 	</b>
 	<br>
 	<sub>
@@ -33,13 +33,13 @@ const pify = require('pify-native');
 // Promisify a single function
 pify(fs.readFile)('package.json', 'utf8').then(data => {
 	console.log(JSON.parse(data).name);
-	//=> 'pify'
+	//=> 'pify-native'
 });
 
 // Promisify all methods in a module
 pify(fs).readFile('package.json', 'utf8').then(data => {
 	console.log(JSON.parse(data).name);
-	//=> 'pify'
+	//=> 'pify-native'
 });
 ```
 

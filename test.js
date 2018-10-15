@@ -82,15 +82,15 @@ test('multiArgs option — rejection', async t => {
 });
 
 test('wrap core method', async t => {
-	t.is(JSON.parse(await m(fs.readFile)('package.json')).name, 'pify');
+	t.is(JSON.parse(await m(fs.readFile)('package.json')).name, 'pify-native');
 });
 
 test('module support', async t => {
-	t.is(JSON.parse(await m(fs).readFile('package.json')).name, 'pify');
+	t.is(JSON.parse(await m(fs).readFile('package.json')).name, 'pify-native');
 });
 
 test('module support - doesn\'t transform *Sync methods by default', t => {
-	t.is(JSON.parse(m(fs).readFileSync('package.json')).name, 'pify');
+	t.is(JSON.parse(m(fs).readFileSync('package.json')).name, 'pify-native');
 });
 
 test('module support - doesn\'t transform *Stream methods by default', t => {
