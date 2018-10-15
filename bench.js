@@ -1,4 +1,11 @@
 const Benchmark = require('benchmark');
+const pkg = require('./package.json')
+
+console.log(pkg.name + '@' + pkg.version)
+console.log()
+console.log('Node: ' + process.versions.node)
+console.log('V8: ' + process.versions.v8)
+console.log()
 
 const pify = require('.');
 
