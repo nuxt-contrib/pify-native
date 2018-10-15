@@ -1,6 +1,6 @@
-# pify [![Build Status](https://travis-ci.org/sindresorhus/pify.svg?branch=master)](https://travis-ci.org/sindresorhus/pify)
+# pify [![Build Status](https://travis-ci.org/blindmedia/pify-native.svg?branch=master)](https://travis-ci.org/blindmedia/pify-native)
 
-> Promisify a callback-style function
+> Promisify a callback-style function with native [util.promisify](https://nodejs.org/api/util.html#util_util_promisify_original) support.
 
 ---
 
@@ -20,7 +20,7 @@
 ## Install
 
 ```
-$ npm install pify
+$ npm install pify-native
 ```
 
 
@@ -28,7 +28,7 @@ $ npm install pify
 
 ```js
 const fs = require('fs');
-const pify = require('pify');
+const pify = require('pify-native');
 
 // Promisify a single function
 pify(fs.readFile)('package.json', 'utf8').then(data => {
@@ -67,7 +67,7 @@ By default, the promisified function will only return the second argument from t
 
 ```js
 const request = require('request');
-const pify = require('pify');
+const pify = require('pify-native');
 
 pify(request, {multiArgs: true})('https://sindresorhus.com').then(result => {
 	const [httpResponse, body] = result;
@@ -95,7 +95,7 @@ Default: `false`
 If given module is a function itself, it will be promisified. Turn this option on if you want to promisify only methods of the module.
 
 ```js
-const pify = require('pify');
+const pify = require('pify-native');
 
 function fn() {
 	return true;

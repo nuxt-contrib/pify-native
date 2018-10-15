@@ -1,9 +1,9 @@
 {
-	"name": "pify",
+	"name": "pify-native",
 	"version": "4.0.0",
-	"description": "Promisify a callback-style function",
+	"description": "Promisify a callback-style function with native util.promisify support",
 	"license": "MIT",
-	"repository": "sindresorhus/pify",
+	"repository": "blindmedia/pify",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
@@ -40,7 +40,8 @@
 		"async",
 		"await",
 		"es2015",
-		"bluebird"
+		"bluebird",
+		"native"
 	],
 	"devDependencies": {
 		"ava": "^0.25.0",
