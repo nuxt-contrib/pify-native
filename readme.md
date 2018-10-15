@@ -1,21 +1,8 @@
-# pify [![Build Status](https://travis-ci.org/blindmedia/pify-native.svg?branch=master)](https://travis-ci.org/blindmedia/pify-native)
+# pify-native [![Build Status](https://travis-ci.org/blindmedia/pify-native.svg?branch=master)](https://travis-ci.org/blindmedia/pify-native)
 
 > Promisify a callback-style function with native [util.promisify](https://nodejs.org/api/util.html#util_util_promisify_original) support.
 
----
-
-<div align="center">
-	<b>
-		<a href="https://tidelift.com/subscription/pkg/npm-pify?utm_source=npm-pify&utm_medium=referral&utm_campaign=readme">Get professional support for 'pify-native' with a Tidelift subscription</a>
-	</b>
-	<br>
-	<sub>
-		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
-	</sub>
-</div>
-
----
-
+**Please see [benchmark results](./bench.md) before using this package! You may want to use [pify](https://github.com/sindresorhus/pify) for performance reasons.**
 
 ## Install
 
