@@ -24,9 +24,9 @@ const nonNativeCases = () => cases.map(c => pify(c, {native: false}));
 const createDifferedTest = cases => {
 	return {
 		defer: true,
-    fn(deferred) {
+		fn(deferred) {
 			Promise
-        .all(cases().map(c => c().catch(error => error)))
+				.all(cases().map(c => c().catch(error => error)))
 				.then(() => deferred.resolve());
 		}
 	};
