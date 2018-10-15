@@ -31,7 +31,7 @@ non-native x 26,415 ops/sec ±4.86% (73 runs sampled)
 Fastest is non-native
 ```
 
-### Node 6.x
+### ~~Node 6.x~~
 
 Results are the same because `Util.promisify` is not supported!
 
