@@ -1,4 +1,4 @@
-# pify-native [![Build Status](https://travis-ci.org/blindmedia/pify-native.svg?branch=master)](https://travis-ci.org/blindmedia/pify-native)
+# pify-native [![Build Status](https://travis-ci.org/jsless/pify-native.svg?branch=master)](https://travis-ci.org/jsless/pify-native)
 
 > Promisify a callback-style function with native [util.promisify](https://nodejs.org/api/util.html#util_util_promisify_original) support.
 
