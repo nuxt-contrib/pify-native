@@ -4,6 +4,21 @@ Tests runned on Macbook Pro 2016 using npx for selecting node version and Travis
 
 You can locally run benchmarks using `node bench.js`
 
+### Node 11.x
+
+mac:
+
+```
+pify-native@4.0.1
+
+Node: 11.4.0
+V8: 7.0.276.38-node.13
+
+non-native x 27,806 ops/sec ±5.15% (69 runs sampled)
+native x 15,198 ops/sec ±6.14% (64 runs sampled)
+Fastest is non-native
+```
+
 ### Node 10.x
 
 mac:
