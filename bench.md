@@ -19,6 +19,19 @@ native x 15,198 ops/sec ±6.14% (64 runs sampled)
 Fastest is non-native
 ```
 
+travis:
+
+```
+pify-native@4.0.1
+
+Node: 11.5.0
+V8: 7.0.276.38-node.13
+
+non-native x 36,329 ops/sec ±2.86% (73 runs sampled)
+native x 20,920 ops/sec ±1.46% (81 runs sampled)
+Fastest is non-native
+```
+
 ### Node 10.x
 
 mac:
